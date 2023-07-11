@@ -29,14 +29,45 @@ body{
 .mb-48{
     margin-bottom: 48px;
 }
+.mt-30{
+    margin-top: 30px;
+}
 /* header style */
 header{
     margin-bottom: 50px;
 }
 .header-bg{
     background-color: rgb(250, 188, 198);
-   
+    position: relative;
 }
+.social-links{
+    position: absolute;
+    left:80px;
+    top:50%;
+    margin-top: -90px;
+   font-size: 40px;
+}
+.social-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.social-links ul li{
+    text-decoration: none;
+   
+ 
+}
+.social-links ul li a{
+    margin-bottom: 60px;
+   c
+    
+}
+.social-links ul li:last-child{
+    margin-bottom: 0px;
+    
+}
+
 
 .header-content{
     max-width: 50%;
@@ -62,6 +93,7 @@ header{
     border: none;
     color: #fff;
     transition: .4s;
+    cursor: pointer;
 }
 .btn-primary:hover{
     color: #000;
@@ -86,12 +118,12 @@ header{
     border-top-right-radius: 300px;
     padding-top: 50px;
 }
-.featured-bg-1{
-    background-color: rgb(250, 188, 198);
-}
 .single-featured img{
     height: 400px;
     width: 300px;
+}
+.featured-bg-1{
+    background-color: rgb(250, 188, 198);
 }
 .featured-bg-2{
     background-color: rgba(5, 151, 160, 0.15)
@@ -160,13 +192,21 @@ header{
     line-height: 30px;
 }
 .signup-button{
-    border-radius: 8px;
+    border-radius: 5px;
     background: #E55473;
     display: inline-flex;
-    padding: 20px 43px;
+    padding: 20px 40px;
     margin-top: 30px;
     border: none;
     color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+.signup-button:hover{
+    color: #E55473;
+    background-color: #fff;
+    transform: scale(1.05);
+    border: 1px solid black;
 }
 
 /* social media section */
@@ -240,6 +280,7 @@ header{
     padding: 18px 30px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 /* footer area design */
 

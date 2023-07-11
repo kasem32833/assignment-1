@@ -13,8 +13,21 @@ body{
     margin: 0 auto;
     overflow: hidden;
 }
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 97px;
+    
+}
 .text-center{
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+.mb-48{
+    margin-bottom: 48px;
 }
 /* header style */
 header{
@@ -22,19 +35,12 @@ header{
 }
 .header-bg{
     background-color: rgb(250, 188, 198);
-    
-
+   
 }
-.flex-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 97px;
-    
 
-}
 .header-content{
     max-width: 50%;
+    padding-left: 5px;
 }
 .content-heading{
     color: #272727;
@@ -47,6 +53,7 @@ header{
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+   
 }
 .btn-primary{
     padding: 20px 40px;
@@ -54,11 +61,77 @@ header{
     border-radius: 5px;
     border: none;
     color: #fff;
+    transition: .4s;
+}
+.btn-primary:hover{
+    color: #000;
+    background-color: #fff;
+    transform: scale(1.05);
+    border: 1px solid black;
 }
 .header-image{
     width: 100%;
     margin-top: 50px;
     margin-bottom: -3px;
+}
+/* Featured section style */
+.featured{
+    margin:  150px 0;
+}
+.single-featured{
+    max-width: 460px ;
+    max-height: 530px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    padding-top: 50px;
+}
+.featured-bg-1{
+    background-color: rgb(250, 188, 198);
+}
+.single-featured img{
+    height: 400px;
+    width: 300px;
+}
+.featured-bg-2{
+    background-color: rgba(5, 151, 160, 0.15)
+}
+.featured-bg-3{
+    background-color: rgba(71, 125, 17, 0.15)
+}
+.featured .section-heading{
+    color: #272727;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+.featured .section-description{
+    color: rgba(39, 39, 39, 0.60);
+    max-width: 600px;
+   
+}
+/* services section style */
+.services-bg{
+    background-color: rgba(39, 39, 39, 0.05);
+}
+.sevices-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+}
+.single-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.single-services img{
+    margin-bottom: 20px;
+}
+/* Hot deal style */
+.hot-deal{
+    border-radius: 8px;
+    background: rgba(229, 84, 115, 0.05);
 }
 /* social section */
 .social-title{
@@ -83,12 +156,14 @@ header{
 }
 .single-cart img{
     width: 90%;
-    height: 90%;
+    height: 100%;
 }
 /* latest deal section */
 .flower-bg{
-    background-image: url('../images/Rectangle\ 9.png');
+    background-image: url('../images/Rectangle 9.png');
     padding: 120px 0;
+    width: 100%;
+    text-align: center;
 }
 .deal-title{
     color: #272727;
@@ -126,12 +201,11 @@ header{
     border-radius: 5px;
 }
 /* footer area design */
-footer{
-    margin-top: 100px;
-}
+
 .footer-area{
+    margin-top: 100px;
     background-color: rgb(250, 169, 183);
-    padding: 128px 0;
+    padding: 100px 0;
 }
 
 .section-heading{
@@ -145,9 +219,10 @@ footer{
     font-weight: 400;
     line-height: 30px;
     margin: 20px 0;
+
 }
 .copy-right{
-    color: rgba(255, 255, 255, 0.40);
+    color: #000;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bold;
 }

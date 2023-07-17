@@ -320,3 +320,28 @@ header{
     font-size: 16px;
     font-weight: bold;
 }
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .container{width: vw;}
+    .flex-container{
+        flex-direction: column;
+        align-content: start;
+       
+    }
+    .header-content{
+        width: 100%;
+    }
+    .footer-area{
+        padding: 100px 20px;
+    }
+    .text-center{
+        padding: 0 20px;
+    }
+    .social-links{
+        left: 20px;
+        top: 10%;
+    }
+}

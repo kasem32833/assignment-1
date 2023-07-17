@@ -344,4 +344,10 @@ header{
         left: 20px;
         top: 10%;
     }
+    .sevices-container{
+        flex-direction: column;
+    }
+    .single-services p{
+        margin-bottom: 20px;
+    }
 }
